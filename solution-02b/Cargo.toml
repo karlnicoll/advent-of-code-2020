@@ -1,0 +1,9 @@
+[package]
+name = "solution-02b"
+version = "0.1.0"
+authors = ["Karl Nicoll <karl@karlnicoll.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
