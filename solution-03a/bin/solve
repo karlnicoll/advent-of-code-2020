@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require 'solution_03a'
+
+print("#{Solution03a::solve(File.new("input.txt"))}\n")

@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require 'solution_03b'
+
+toboggan_list = [
+  Solution03b::Toboggan.new(1, 1),
+  Solution03b::Toboggan.new(1, 3),
+  Solution03b::Toboggan.new(1, 5),
+  Solution03b::Toboggan.new(1, 7),
+  Solution03b::Toboggan.new(2, 1)
+]
+
+input_file = File.new("input.txt")
+
+result = 1
+for toboggan in toboggan_list
+  result *= Solution03b::solve(input_file, toboggan)
+  input_file.seek(0)
+end
+print("#{result}\n")
